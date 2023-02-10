@@ -1,0 +1,112 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>ECV example</title>
+    <link type="text/css" rel="stylesheet" media="all" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="loginPage">
+
+            <div class="loginContainer">
+                <div class="inputContainer">
+                    <label for="room">Room number</label>
+                    <input type="number" id="inputRoom" class= "loginInputs" placeholder="Write the room number here!">
+                </div>
+                <div class="inputContainer">
+                    <label for="name">User Name</label>
+                    <input type="text" id="inputUserName" class= "loginInputs" placeholder="Write your name here!">
+                </div>
+
+                <button id="login"> Login </button>
+            </div>
+
+        </div>
+
+        <div class="selectProfileImage">
+            <label for="profileImage">Select an image profile</label>
+            <div class="selectProfileImageContainer">
+                
+            </div>
+        </div>
+
+
+        <div class="chatePage">
+
+            <div class="header">
+
+                <div class="myProfile">
+                    <div class="profileImageContainer">
+                        <img class="profileImage" id="myImage"/> 
+                    </div>
+
+                    <div class="userName" id="myName"> </div>
+
+                    <!--<div class="logoutContainer">
+                        <button id="logout"> </button>
+                    </div>-->
+                </div>
+
+                <div class="chatProfile">
+                    <div class="containerRoomName"> 
+                        <div class="userName" id="roomName">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="mainBottom">
+                <div class="mainLeft">
+
+                    <div class="myChats">
+                        <div class="containerChats">
+                            <div class="text"> Users connected </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mainRight">
+
+                    <div class="chat">
+
+                        <div id="containerChat">
+                            
+                        </div>
+                    </div>
+
+                    <div class="inputBarChat">
+                        <div class="containerInputBar">
+                            <div class="newMessage">
+                                <input type="text" class="newMessage" placeholder="Write your message here!">
+                            </div>
+                            <div class="sendMessage">
+                                <div class="sendMessageContainer">
+                                    <button class="send"> </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="sillyclient.js"></script>
+    <script type="text/javascript" src="code.js"></script>
+    <script> MYCHAT.init() </script>
+</body>
+
+</html>

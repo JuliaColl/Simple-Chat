@@ -1,0 +1,426 @@
+
+
+* {    
+  /*for all the elements*/
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+html, body{
+  background-color: rgb(255, 255, 255);
+  width: 100vw;
+  height: 100vh;
+  font-family: Segoe UI,Helvetica Neue,Helvetica,Lucida Grande,Arial,Ubuntu,Cantarell,Fira Sans,sans-serif;
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #cecece;
+  border-radius: 17px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+
+
+
+.main {
+  /*padding: 10px;*/
+  width: 100%;
+  height: 100%;
+}
+
+.chatePage {
+  /*padding: 10px;*/
+  width: 100%;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+}
+
+.header {
+  /*flex-basis: 10%;*/
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  /*height: 100%;*/
+}
+
+.myProfile{
+  background-color: rgb(233 234 236);
+  flex-basis: 27%;
+  padding: 10px 16px;
+  display: flex;
+  align-items:center;
+  width: 100%;
+  height: 100%;
+}
+
+.chatProfile{
+  background-color: rgb(233 234 236);
+  flex-basis: 73%;
+  padding: 10px 16px;
+  border-left: 1px solid rgb(199, 201, 200);
+  width: 100%;
+  height: 100%;
+}
+
+
+.mainBottom {
+  /*flex-basis: 90%;*/
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.mainLeft {
+  flex-basis: 27%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.mainRight{
+  flex-basis: 73%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.chat {
+  background-color: rgb(153 193 217);
+  /*flex-basis: 88%;*/
+  /* display: flex; */
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.inputBarChat{
+  background-color: rgb(233 234 236);
+  /*flex-basis: 12%;*/
+  width: 100%;
+  /*height: 100%;*/
+}
+
+.myChats{
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+}
+
+/* --------------------------------------------------------------- LOGIN PAGE --------------------------------------------------------------- */
+
+.loginPage{
+  background-color: rgb(153 193 217);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginContainer{
+  background-color: white;
+  width: 500px;
+  /*height: 500px;*/
+  border-radius: 15px;
+  max-height: 90vh;
+  max-width: 80vw;
+  padding: 40px 25px;
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 20px;
+}
+
+input.loginInputs {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button#login {
+  width: 75%;
+  background-color: rgb(101, 140, 165);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: center;
+}
+
+button#login:hover {
+  background-color: rgb(87, 120, 141);
+}
+
+/* --------------------------------------------------------------- SELECT IMAGE --------------------------------------------------------------- */
+
+.selectProfileImage{
+  background-color: rgb(153 193 217);
+  width: 100%;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  row-gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.selectProfileImageContainer{
+  background-color: white;
+  /*width: 500px;*/
+  /*height: 500px;*/
+  border-radius: 15px;
+  max-height: 90vh;
+  max-width: 80vw;
+  padding: 40px 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 20px;
+  /*overflow-x: scroll;*/
+}
+
+.imageContainer{
+  height: 70px;
+  width: 70px;
+
+}
+
+/* ---------------------------------------------------------------  USER PRFILE --------------------------------------------------------------- */
+.containerRoomName{
+  width: 100%;
+  height: 100%;
+  /* display: grid; */
+  /* grid-template-columns: 10% 90%; */
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+
+}
+
+.profileImage{
+  /* grid-column: 1; */
+  padding: 2px;
+}
+
+.profileImageContainer{
+  height: 43px;
+  width: 43px;
+}
+
+img.profileImage{
+  border-radius: 50%;
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+}
+ 
+.userName{
+  /* grid-column: 2; */
+  padding: 10px;
+
+
+  vertical-align: middle;
+}
+
+.logoutContainer{
+  margin-left: auto;
+  height: 20px;
+  width: 20px;
+}
+
+
+button#logout{
+  width: 100%;
+  height: 100%;
+  background-image: url(images/logout.png);
+  background-size: cover;
+  border-style: hidden;
+  background-color : transparent;
+}
+
+
+/* ---------------------------------------------------------------  INPUT BAR --------------------------------------------------------------- */
+
+.containerInputBar{
+  width: 100%;
+  height: 75px;
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+}
+
+.newMessage{
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+input.newMessage{
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  padding: 10px;
+  outline: none;
+  border-style: hidden;
+}
+
+.sendMessage{
+  padding-right: 10px;
+  
+}
+
+.sendMessageContainer{
+  height: 40px;
+  width: 40px;
+}
+
+button.send{
+  width: 100%;
+  height: 100%;
+  background-image: url(images/send.png);
+  background-size: cover;
+  border-style: hidden;
+  background-color : transparent;
+
+}
+
+/* ---------------------------------------------------------------  CHAT --------------------------------------------------------------- */
+
+#containerChat{
+  /* position: absolute;
+  top: 0;
+  z-index: 100;
+  */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+  /* height: 100%; */
+  align-items: stretch;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  gap: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+}
+
+.containerMyMessage{
+  display: flex;
+  flex-direction: column;
+  padding-right: 15px;
+  padding-left: 20px;
+  align-items: flex-end;
+}
+
+.containerOtherMessage{
+  display: flex;
+  flex-direction: row;
+  padding-right: 20px;
+  padding-left: 15px;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+.containerInfoMessage{
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+  padding-left: 12px;
+  align-items: center;
+  font-size: small;
+}
+
+
+.message{
+  padding: 9px;
+  background-color: white;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+
+.info{
+  background-color: rgb(129 129 129);
+  color:rgb(255, 255, 255);
+  padding: 5px;
+}
+
+
+.name{
+  padding-right:12px;
+  font-size: small;
+  font-weight: bold;
+  color: rgb(129 129 129);
+}
+
+.miniProfileImage{
+  height: 35px;
+  width: 35px;
+}
+
+
+
+/* --------------------------------------------------------------- MY CHATS --------------------------------------------------------------- */
+
+.containerChats{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+  /* height: 100%; */
+  align-items: stretch;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  gap: 3px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+}
+
+.containerOneChat{
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  padding: 5px;
+  border-bottom: 1px solid rgb(199, 201, 200);
+}
+
+.text{
+  align-self: center;
+}
