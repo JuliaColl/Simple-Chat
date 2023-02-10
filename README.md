@@ -1,7 +1,10 @@
-# JuliaColl.github.io
+# Simple Chat
 
 Small project for the Virtual Communication Environments subject. 
+
 Goal: Create a useful application with one simple use-case, communicate people.
+
+Test the chat here: https://juliacoll.github.io/simple-chat/
 
 - Login page:
 When entering the web there appers a login page where the user can choose a user name and a room to enter.
